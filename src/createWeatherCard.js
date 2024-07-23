@@ -4,15 +4,15 @@ export default function createWeatherCard(parentDiv, forecastObject) {
   parentDiv.appendChild(date);
 
   const temp = document.createElement("span");
-  temp.textContent = `${forecastObject.temp}°C`;
+  temp.textContent = `Temp: ${forecastObject.temp}°C`;
   parentDiv.appendChild(temp);
   const rain = document.createElement("span");
-  rain.textContent = `${forecastObject.precip}mm`;
+  rain.textContent = `Rain: ${forecastObject.precip}mm`;
   parentDiv.appendChild(rain);
   const rainChance = document.createElement("span");
-  rainChance.textContent = `${forecastObject.precipprob}%`;
+  rainChance.textContent = `Chance: ${forecastObject.precipprob}%`;
   parentDiv.appendChild(rainChance);
   const uvIndex = document.createElement("span");
-  uvIndex.textContent = forecastObject.uvIndex;
+  uvIndex.textContent = `UV Index: ${forecastObject.uvindex}`;
   parentDiv.appendChild(uvIndex);
 }
