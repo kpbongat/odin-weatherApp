@@ -11,12 +11,29 @@
 .flex {
   display: flex;
 }
+.flex-column {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
 
 .main {
   width: 100vw;
-  height: 100vh;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.forecast {
+  width: 80vw;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+}
+
+.card {
+}
+.span-end {
+  grid-column: 1 / -1;
 }
